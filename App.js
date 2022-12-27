@@ -79,6 +79,7 @@ export default class App extends Component {
         </View>
 
         <FlatList
+            keyExtractor={(item) => item.id}  //reconhece onde esta o id da lista
             data={this.state.feed}
             renderItem={ ({item}) => <Lista data={item} /> }
           />
