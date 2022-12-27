@@ -11,7 +11,7 @@ export default class App extends Component {
       feed: [
         {
           id: '1',
-          nome: 'Lucas Silva',
+          nome: 'Felipe Lopes',
           descricao: 'Mais um dia de muitos bugs :)',
           imgperfil: 'https://sujeitoprogramador.com/instareact/fotoPerfil1.png',
           imgPublicacao: 'https://sujeitoprogramador.com/instareact/foto1.png',

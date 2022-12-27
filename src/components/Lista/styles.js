@@ -56,4 +56,8 @@ export const styles = StyleSheet.create({
     fontSize: 15,
     color: '#000',
   },
+  likes:{
+    fontWeight: 'bold',
+    marginLeft: 5,
+  },
 })
