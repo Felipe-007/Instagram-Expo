@@ -62,27 +62,72 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <View style={styles.header}>
+          <View style={styles.icons}>
+            <TouchableOpacity>
+              <Image
+                style={styles.imgLogo}
+                source={require('./src/img/Notificações.png')}
+              />
+            </TouchableOpacity>
 
-          <TouchableOpacity>
-            <Image
-              style={styles.imgLogo}
-              source={require('./src/img/logo.png')}
-            />
-          </TouchableOpacity>
+            <TouchableOpacity>
+              <Image
+                style={styles.btnAdd}
+                source={require('./src/img/btnAdd.png')}
+              />
+            </TouchableOpacity>
 
-          <TouchableOpacity>
-            <Image
-              style={styles.imgSend}
-              source={require('./src/img/send.png')}
-            />
-          </TouchableOpacity>          
+            <TouchableOpacity>
+              <Image
+                style={styles.carrinho}
+                source={require('./src/img/Carrinho.png')}
+              />
+            </TouchableOpacity>
+          </View>
+
+          <View style={styles.stories}>
+            <TouchableOpacity>
+              <Image
+                style={styles.imgStories}
+                source={require('./src/img/foto-perfil.png')}
+              />
+            </TouchableOpacity>
+
+            <TouchableOpacity>
+              <Image
+                style={styles.imgStories}
+                source={require('./src/img/move.png')}
+              />
+            </TouchableOpacity>
+
+            <TouchableOpacity>
+              <Image
+                style={styles.imgStories}
+                source={require('./src/img/steve.png')}
+              />
+            </TouchableOpacity>
+
+            <TouchableOpacity>
+              <Image
+                style={styles.imgStories}
+                source={require('./src/img/vr.png')}
+              />
+            </TouchableOpacity>
+
+            <TouchableOpacity>
+              <Image
+                style={styles.imgStories}
+                source={require('./src/img/figma.png')}
+              />
+            </TouchableOpacity>
+          </View>
         </View>
 
         <FlatList
-            keyExtractor={(item) => item.id}  //reconhece onde esta o id da lista
-            data={this.state.feed}
-            renderItem={ ({item}) => <Lista data={item} /> }
-          />
+          keyExtractor={(item) => item.id}  //reconhece onde esta o id da lista
+          data={this.state.feed}
+          renderItem={({ item }) => <Lista data={item} />}
+        />
       </View>
     )
   }

@@ -5,24 +5,38 @@ export const styles = StyleSheet.create({
     flex: 1
   },
   header: {
-    backgroundColor: '#FFF',
-    textAlign: 'center',
-    justifyContent: 'space-between',
+    height: 150,
+    borderBottomLeftRadius: 20,
+    borderBottomRightRadius: 20,
+    backgroundColor: '#1F1F1F',
+  },
+  icons: {
     flexDirection: 'row',
-    height: 55,
-    marginTop: 60,
-    padding: 5,
-
-    borderBottomWidth: 0.2, //borda de baixo
-    shadowColor: '#000',
-    elevation: 1,    
+    alignItems: 'center',
+    marginTop: 38,
   },
   imgLogo: {
-
+    width: 24,
+    height: 24, 
+    marginLeft: 15,
   },
-  imgSend: {
-    height: 23,
-    width: 23,
+  btnAdd: {
+    width: 24,
+    height: 24, 
+    marginLeft: 250,    
   },
-
+  carrinho: {
+    width: 31,
+    height: 26,
+    marginLeft: 25,       
+  },
+  stories: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+  },
+  imgStories: {
+    marginTop: 18,
+    width: 51,
+    height: 51,
+  }
 })

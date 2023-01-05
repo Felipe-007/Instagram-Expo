@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   areaFeed: {
-
+    backgroundColor: '#FFF',
   },
   viewPerfil: {
     fle: 1,
